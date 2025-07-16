@@ -1,0 +1,246 @@
+.autoslide-container {
+  width: 100%;
+  max-width: 1920px;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  margin: 50px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.autoslide-track {
+  display: flex;
+  width: 105%; /* 5 รูป */
+  height: 100%;
+  animation: slideMove 25s infinite;
+}
+
+.autoslide {
+  flex: 0 0 100%;
+  height: 100%;
+}
+
+.autoslide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Animation เคลื่อนไหว */
+@keyframes slideMove {
+  0% { transform: translateX(0%); }
+  20% { transform: translateX(0%); }
+
+  25% { transform: translateX(-100%); }
+  40% { transform: translateX(-100%); }
+
+  45% { transform: translateX(-200%); }
+  60% { transform: translateX(-200%); }
+
+  65% { transform: translateX(-300%); }
+  80% { transform: translateX(-300%); }
+
+  85% { transform: translateX(-400%); }
+  100% { transform: translateX(-400%); }
+}
+  header {
+    background-color: rgb(199, 131, 245);
+    color: #f3f3f7;
+    padding: 10px 0;
+    text-align: center;
+  }
+  nav a {
+    color: #fdfdfc;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18;
+  }
+  body {
+    font-family: 'Kanit', sans-serif;
+    margin: 20px;
+    background: #f9f9f9;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .food-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .food-item {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+  }
+  
+  .food-item:hover {
+    transform: translateY(-5px);
+  }
+
+  .food-image {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+  }
+
+  .food-info {
+    padding: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .food-category {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+  }
+
+  .food-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .food-price {
+    font-size: 1.1rem;
+    color: #2c7a7b;
+    font-weight: bold;
+  }
+  .logo {
+    width: 225px;
+    cursor: pointer;
+  }
+  .logo1 {
+    width: 65px;
+    cursor: pointer;
+  }
+  .logo2 {
+    width: 80px;
+    cursor: pointer;
+  }
+  /* ส่วน popup */
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.popup-content {
+  background-color: #fff;
+  margin: 5% auto;
+  padding: 10px;
+  border-radius: 10px;
+  width: 800px;
+  max-width: 95%;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.popup-content img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* หน้าเว็บหลัก */
+body {
+  font-family: 'Tahoma', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+header {
+  background-color: rgb(199, 131, 245);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+header p {
+  font-size: 18px;
+}
+
+.content {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+  color: rgb(199, 131, 245);
+  margin-top: 20px;
+}
+
+.content ul {
+  padding-left: 20px;
+}
+
+.network-img {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 6px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(199, 131, 245);
+  font-size: 14px;
+}
+  body {
+      font-family: 'Kanit', sans-serif;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+    input[type="text"] {
+      padding: 10px;
+      width: 100%;
+      max-width: 400px;
+      font-size: 16px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
